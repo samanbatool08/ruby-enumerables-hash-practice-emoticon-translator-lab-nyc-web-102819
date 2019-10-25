@@ -1,6 +1,11 @@
+# require modules here
 require 'yaml'
 require 'pry'
+#emoticon_file = YAML.load_file('./lib/emoticons.yml')
+#emoticon = '(#^.^#)'
 
+def load_library
+  # code goes here
 def load_library(emoticon_file)
   emoticons = YAML.load_file('./lib/emoticons.yml')
 
@@ -16,12 +21,15 @@ def load_library(emoticon_file)
   emoticon_lib
 end
 
+
 def get_japanese_emoticon(emoticon_file, emoticon)
   emoticon_lib = load_library(emoticon_file)
   japanese_emoticon = emoticon_lib['get_emoticon'][emoticon]
   japanese_emoticon ? japanese_emoticon : 'Sorry, that emoticon was not found'
 end
 
+def get_japanese_emoticon
+  # code goes here
 def get_english_meaning(emoticon_file, emoticon)
   emoticon_lib = load_library(emoticon_file)
   english_meaning = emoticon_lib['get_meaning'][emoticon]
@@ -29,4 +37,9 @@ def get_english_meaning(emoticon_file, emoticon)
 end
 
 def get_english_meaning
-end
+  # code goes here
+end 
+#test_j = get_japanese_emoticon(emoticon_file, emoticon)
+#test_e = get_english_meaning(emoticon_file, emoticon)
+#p test_j
+#p test_e 
