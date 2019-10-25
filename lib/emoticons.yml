@@ -1,5 +1,1 @@
-def load_library (file)
-    emoticons = YAML.load_file(file)
-    new_emos = {:get_meaning => {},
-:get_emoticon => {}
-}
+require "yaml"
