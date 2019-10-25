@@ -1,1 +1,3 @@
 require "yaml"
+
+hash = {"get_emoticon" => {}}
